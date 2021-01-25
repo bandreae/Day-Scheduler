@@ -1,4 +1,6 @@
-alert("hello world");
+// alert("hello world");
+
+console.log("hello world!");
 
 $(document).ready(function () {
     var currentTime = moment().format("dddd, MMMM Do, YYYY");
