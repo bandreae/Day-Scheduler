@@ -20,10 +20,10 @@ $('#currentDay').html(date);
 
 console.log(date);
 
-$(document).ready(function () {
-    var currentDay = moment().format("dddd, MMMM Do, YYYY");
-     // Friday, January 26, 2021
-$('#date').append(now);
+// $(document).ready(function () {
+//     var currentDay = moment().format("dddd, MMMM Do, YYYY");
+//      // Friday, January 26, 2021
+// $('#date').append(now);
 
-});
+// });
 
