@@ -31,7 +31,7 @@ THEN the saved events persist
 ```
 
 
-## Mock-Up
+## Screenshot
 
 The following is a placeholder for the screenshot forthcoming:
 
