@@ -1,10 +1,10 @@
 // JS Pseudocode
 
-// GIVEN I am using a daily planner to create a schedule
-// WHEN I open the planner
-// THEN the current day is displayed at the top of the calendar
-// WHEN I scroll down
-// THEN I am presented with time blocks for standard business hours
+// Testing js link to html
+console.log("hello world!");
+
+// current day is displayed at the top of the calendar
+// presented with time blocks for standard business hours
 // WHEN I view the time blocks for that day
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
 // WHEN I click into a time block
@@ -15,15 +15,22 @@
 // THEN the saved events persist
 
 //Current day is displayed at the top of the calendar
-var date = moment().format('MMMM Do YYYY');
-$('#currentDay').html(date);
+var currentDate = moment().format("MMMM Do YYYY");
+$("#currentDay").html(currentDate);
 
-console.log(date);
+console.log(currentDate);
 
-// $(document).ready(function () {
-//     var currentDay = moment().format("dddd, MMMM Do, YYYY");
-//      // Friday, January 26, 2021
-// $('#date').append(now);
+$(document).ready(function () {
 
-// });
+    // Save Button on "click"  
+    $(".saveBtn").on("click", function () {
+        
+        // Select values of the hour block description
+        var userInput = $(this).siblings(".description").val();
+        var hourBlock = $(this).parent().attr("id");
 
+        // Save user input in textarea in local storage
+        localStorage.setItem(userInput, hourBlock);
+    }) 
+
+})
