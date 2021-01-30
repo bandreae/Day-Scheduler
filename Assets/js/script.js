@@ -30,18 +30,15 @@ $(document).ready(function () {
         var hourBlock = $(this).parent().attr("id");
 
         // Save user input in textarea in local storage
-        localStorage.setItem(userInput, hourBlock);
+        localStorage.setItem(hourBlock, userInput);
     }) 
 
-})
-
 // Time block color changes for future, past and present
-
 var timeNow = moment().hours();
 
 function timeColorChanges() {
 
-  for (var i = 8; i < 18; i++)
+  for (var i = 9; i < 18; i++)
 
     if (i > timeNow) {
       $('#' + i).children('textarea').addClass("future")
@@ -54,3 +51,5 @@ function timeColorChanges() {
     }
 }
 timeColorChanges();
+
+})
