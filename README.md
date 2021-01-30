@@ -33,6 +33,7 @@ THEN the saved events persist
 
 ## Screenshot
 
+
 The following is a placeholder for the screenshot forthcoming:
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
+![day planner screenshot](./Assets/Day-Scheduler-Screenshot)

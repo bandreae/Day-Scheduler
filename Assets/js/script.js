@@ -31,7 +31,7 @@ $(document).ready(function(){
 
       // Save user input in textarea in local storage
       localStorage.setItem(hourBlock, userInput);
-    })
+    }) 
 
   // Local storage
   $("#9AM .description").val(localStorage.getItem("9AM"));
