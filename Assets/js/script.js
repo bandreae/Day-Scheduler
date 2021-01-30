@@ -34,3 +34,23 @@ $(document).ready(function () {
     }) 
 
 })
+
+// Time block color changes for future, past and present
+
+var timeNow = moment().hours();
+
+function timeColorChanges() {
+
+  for (var i = 8; i < 18; i++)
+
+    if (i > timeNow) {
+      $('#' + i).children('textarea').addClass("future")
+
+    } else if (i < timeNow) {
+      $('#' + i).children('textarea').addClass("past")
+    }
+    else if (i === timeNow) {
+      $('#' + i).children('textarea').addClass("present")
+    }
+}
+timeColorChanges();
