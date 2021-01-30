@@ -20,36 +20,28 @@ $("#currentDay").html(currentDate);
 
 console.log(currentDate);
 
-$(document).ready(function () {
+$(document).ready(function(){
 
     // Save Button on "click"  
-    $(".saveBtn").on("click", function () {
+    $(".saveBtn").on("click", function(){
         
-        // Select values of the hour block description
-        var userInput = $(this).siblings(".description").val();
-        var hourBlock = $(this).parent().attr("id");
+      // Select values of the hour block description
+      var userInput = $(this).siblings(".description").val();
+      var hourBlock = $(this).parent().attr("id");
 
-        // Save user input in textarea in local storage
-        localStorage.setItem(hourBlock, userInput);
-    }) 
+      // Save user input in textarea in local storage
+      localStorage.setItem(hourBlock, userInput);
+    })
 
-// Time block color changes for future, past and present
-var timeNow = moment().hours();
-
-function timeColorChanges() {
-
-  for (var i = 9; i < 18; i++)
-
-    if (i > timeNow) {
-      $('#' + i).children('textarea').addClass("future")
-
-    } else if (i < timeNow) {
-      $('#' + i).children('textarea').addClass("past")
-    }
-    else if (i === timeNow) {
-      $('#' + i).children('textarea').addClass("present")
-    }
-}
-timeColorChanges();
+  // Local storage
+  $("#9AM .description").val(localStorage.getItem("9AM"));
+  $("#10AM .description").val(localStorage.getItem("10AM"));
+  $("#11AM .description").val(localStorage.getItem("11AM"));
+  $("#12PM .description").val(localStorage.getItem("12PM"));
+  $("#1PM .description").val(localStorage.getItem("1PM"));
+  $("#2PM .description").val(localStorage.getItem("2PM"));
+  $("#3PM .description").val(localStorage.getItem("3PM"));
+  $("#4PM .description").val(localStorage.getItem("4PM"));
+  $("#5PM .description").val(localStorage.getItem("5PM"));
 
 })
