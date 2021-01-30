@@ -1,6 +1,6 @@
 # Third-Party APIs: Work Day Scheduler
 
-This simple calendar application allows a user to save events for each hour of the day. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery. The application can be viewed [here](https://bandreae.github.io/Day-Scheduler/).
+This simple calendar application allows a user to save events for each hour of the day. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery. [The application can be viewed here](https://bandreae.github.io/Day-Scheduler/).
 
 
 ## Built With
@@ -33,7 +33,4 @@ THEN the saved events persist
 
 ## Screenshot
 
-
-The following is a placeholder for the screenshot forthcoming:
-
-![day planner screenshot](./Assets/Day-Scheduler-Screenshot)
+![day planner screenshot](./Assets/Day-Scheduler-Screenshot.png)
