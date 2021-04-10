@@ -20,6 +20,24 @@ $("#currentDay").html(currentDate);
 
 console.log(currentDate);
 
+var currentTime = (moment().hour()).toString();
+console.log(currentTime)
+
+$(".timeBlock").each(function(){
+  //console.log($(this))
+  var staticTime = $(this).attr("id");
+  console.log(staticTime);
+
+  if(currentTime > staticTime) {
+    $(this).addClass("past")
+  } else if (currentTime === staticTime){
+    $(this).addClass("present")
+  } else {
+    $(this).addClass("future")
+  }
+
+})
+
 $(document).ready(function(){
 
     // Save Button on "click"  
